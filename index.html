@@ -21,6 +21,7 @@
     <div class="container site-nav">
       <a href="index.html" class="logo"> WEB<span class="logo-part">STUDIO</span> </a>
       <nav>
+        
         <ul class="item main-nav ">
           <li>
             <a href="index.html" class="main-nav-site link current">Studio</a>
@@ -32,6 +33,7 @@
             <a href="" class="main-nav-site link ">Contacts</a>
           </li>
         </ul>
+        
       </nav>
       <address>
         <ul class="main-nav contact">
@@ -39,6 +41,13 @@
           <li><a href="tel:+110001111111" class="main-nav-cnt link">+11 (000) 111-11-11</a></li>
         </ul>
       </address>
+      <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+          <svg width="32" height="22" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd"
+              d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+              clip-rule="evenodd"></path>
+          </svg>
+        </button>
     </div>
   </header>
   <main>
@@ -88,18 +97,18 @@
     </section>
 
     <!--Section 2-->
-    <section class="section">
+    <section class="section what-section">
       <div class="container">
         <h2 class="header-two">What are we doing</h2>
         <ul class="main-nav doing-block">
           <li>
-            <img src="./images/section_2/img_1.jpg" alt="computar" width="360" height="300">
+            <img srcset="./images/section_2/img1@2x.jpg 2x" src="./images/section_2/img1.jpg" alt="computar" width="360" height="300">
           </li>
           <li>
-            <img src="./images/section_2/img_2.jpg" alt="phone" width="360" height="300">
+            <img srcset="./images/section_2/img2@2x.jpg 2x" src="./images/section_2/img2.jpg" alt="phone" width="360" height="300">
           </li>
           <li>
-            <img src="./images/section_2/img_3.jpg" alt="computar and phone" width="360" height="300">
+            <img srcset="./images/section_2/img3@2x.jpg 2x" src="./images/section_2/img3.jpg" alt="computar and phone" width="360" height="300">
           </li>
         </ul>
       </div>
@@ -112,7 +121,7 @@
 
         <ul class="main-nav team-block">
           <li class="team-card">
-            <img src="./images/section_3/img_1.jpg" alt="Mark Guerrero" width="264" height="260">
+            <img srcset="./images/section_3/img_1@2x.jpg 2x" src="./images/section_3/img_1.jpg" alt="Mark Guerrero" width="264" height="260">
             <div class="team">
               <h3 class="name-team">Mark Guerrero</h3>
               <p class="position">Product Designer</p>
@@ -151,7 +160,7 @@
           </li>
 
           <li class="team-card">
-            <img src="./images/section_3/img_2.jpg" alt="Tom Ford" width="264" height="260">
+            <img srcset="./images/section_3/img_2@2x.jpg 2x" src="./images/section_3/img_2.jpg" alt="Tom Ford" width="264" height="260">
             <div class="team">
               <h3 class="name-team">Tom Ford</h3>
               <p class="position">Frontend Developer</p>
@@ -189,7 +198,7 @@
           </li>
 
           <li class="team-card">
-            <img src="./images/section_3/img_3.jpg" alt="Camila Garcia" width="264" height="260">
+            <img srcset="./images/section_3/img_3@2x.jpg 2x" src="./images/section_3/img_3.jpg" alt="Camila Garcia" width="264" height="260">
             <div class="team">
               <h3 class="name-team">Camila Garcia</h3>
               <p class="position">Marketing</p>
@@ -227,7 +236,7 @@
           </li>
 
           <li class="team-card">
-            <img src="./images/section_3/img_4.jpg" alt="Daniel Wilson" width="264" height="260">
+            <img srcset="./images/section_3/img_4@2x.jpg 2x" src="./images/section_3/img_4.jpg" alt="Daniel Wilson" width="264" height="260">
             <div class="team">
               <h3 class="name-team">Daniel Wilson</h3>
               <p class="position">UI Designer</p>
@@ -319,7 +328,7 @@
   </main>
   <footer class="footer ">
     <div class="container">
-      <div class="logo-container">
+       <di class="logo-container">
         <div class="social-media">
           <a href="index.html" class="logo"> WEB<span class="logo-part2">STUDIO</span> </a>
           <p class="text">
@@ -429,7 +438,67 @@
     </form>
   </div>
   </div>
-  <script src="./js/modal.js"></script>
+<div class="menu-container js-menu-container" id="mobile-menu">
+  <button class="close-modal js-close-menu">
+    <svg class="close" width="8px" height="8px">
+      <use href="./images/icon/sprite.svg#icon-close"></use>
+    </svg>
+  </button>
+ <ul class=" main-nav item-mobile">
+  <li>
+    <a href="index.html" class="mobile-nav link">Studio</a>
+  </li>
+  <li>
+    <a href="portfolio.html" class="mobile-nav link">Portfolio</a>
+  </li>
+  <li>
+    <a href="" class="link mobile-nav">Contacts</a>
+  </li>
+ </ul>
+ <div class="mobile-bottom">
+  <ul class="main-nav contact-mobile">
+    <li><a href="tel:+110001111111" class="mobile-cnt link">+11 (000) 111-11-11</a></li>
+    <li><a href="mailto:info@devstudio.com" class="mobile-cnt link">info@devstudio.com</a></li>
+  </ul>
+
+  <ul class="main-nav mobile-icon">
+    <li>
+      <a href="#" class="link social-list ">
+        <svg width="24px" height="24px">
+          <use href="./images/icon/sprite.svg#instagram"></use>
+        </svg>
+      </a>
+    </li>
+    <li>
+      <a href="#" class="link social-list">
+        <svg width="24px" height="24px">
+          <use href="./images/icon/sprite.svg#twitter"></use>
+        </svg>
+      </a>
+    </li>
+    <li>
+      <a href="#" class="link social-list">
+        <svg width="24px" height="24px">
+          <use href="./images/icon/sprite.svg#facebook"></use>
+        </svg>
+      </a>
+    </li>
+    <li>
+      <a href="#" class="link social-list">
+        <svg width="24px" height="24px">
+          <use href="./images/icon/sprite.svg#linkedin"></use>
+        </svg>
+      </a>
+    </li>
+  </ul>
+  </div>
+</div>
+
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+  integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+  crossorigin="anonymous"></script>
+<script defer src="js/mobile-menu.js"></script>
+<script src="./js/modal.js"></script>
 </body>
 
 </html>
